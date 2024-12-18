@@ -1,0 +1,158 @@
+------------------------------------------------------------------------------------------------------------------------------------------------
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Nexus-TimeLine ˢᶜʳⁱᵖᵗ ᵐᵃᵈᵉ ᵇʸ ᵃˡˡᶠⁱˡᵐ", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+ 
+ ----𝙨𝙘𝙧𝙞𝙥𝙩 𝙢𝙖𝙙𝙚 𝙗𝙮 𝙖𝙡𝙡𝙁𝙞𝙡𝙢
+ 
+ ---- ˢᶜʳⁱᵖᵗ ᵐᵃᵈᵉ ᵇʸ ᵃˡˡᶠⁱˡᵐ
+ 
+OrionLib:MakeNotification({
+    Name = "Logged in!",
+    Content = "You are logged in as  "..Player.Name,
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+ 
+OrionLib:MakeNotification({
+    Name = "Script Loaded!",
+    Content = "Enjoy Using The Script Made By NexusTimeline™",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+----- Auto Farm Items
+local Tab = Window:MakeTab({
+    Name = "Item Farm",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "AutoFarm"
+})
+
+
+ ------------------------------------------------------------------------------------------------------------------------"
+
+Tab:AddParagraph("Auto Farms Items.","Pick up roka.arrows.dio bone, other shit.")
+local autoFarmEnabled = false
+local running = false
+
+local Tab = Window:MakeTab({
+	Name = "Shop",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Shop"
+})
+
+Tab:AddButton({
+	Name = "Shop menu",
+	Callback = function()
+      		print("Menu open")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Force The Shop menu",
+	Callback = function()
+      		print("Forced the menu")
+  	end    
+})
+
+Tab:AddParagraph("Buy Stuff in game","Much thing's... ya know?")
+
+local Tab = Window:MakeTab({
+	Name = "Storage",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Storage thingy"
+})
+
+Tab:AddButton({
+	Name = "Stand Storage menu",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Item storage menu",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddParagraph("Open The Menu", nill)
+
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Local"
+})
+
+Tab:AddButton({
+	Name = "Rejoin",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Anti Kick",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Reset Tool",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "TP tool",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddSlider({
+	Name = "Player Speed Value",
+	Min = 25,
+	Max = 300,
+	Default = 25,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Player Power Jump",
+	Min = 25,
+	Max = 300,
+	Default = 25,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddParagraph("Enjoy messing around here",nill)
